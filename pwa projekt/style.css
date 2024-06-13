@@ -1,0 +1,133 @@
+.naslov {
+    text-align: center;
+    padding: 10px;
+}
+
+.nav1 {
+    text-align: center;
+    margin: auto;
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    border: 5px;
+    border-color: black;
+    font-weight: bold;
+    font-size: larger;
+    max-width: 1317px;
+}
+
+.mali {
+    background-color: black;
+    padding: 10px;
+}
+
+section {
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+}
+
+.title {
+    text-align: center;
+}
+
+.section-content {
+    display: flex;
+    gap: 20px;
+}
+
+.article {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.article img {
+    width: 100%;
+    height: auto;
+    max-height: 300px;  /* Set a maximum height for the images */
+    object-fit: cover;  /* Ensure the image covers the specified height while maintaining aspect ratio */
+}
+
+.article p {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    background-color: rgb(8, 8, 8);
+    color: white;
+}
+
+.article h4 {
+    text-align: center;
+}
+
+.footer {
+    background-color: #3a3a3a; 
+    color: #e2e2e2; 
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px; 
+}
+
+.footer-content p {
+    margin: 0;
+    font-size: 1em;
+}
+
+.iimg {
+    width: 100%; 
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+}
+
+.articles-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    gap: 16px;
+    padding: 20px;
+}
+
+.article-item {
+    flex: 0 1 calc(33.333% - 16px); 
+    box-sizing: border-box;
+    margin-bottom: 16px; 
+}
+
+.article2 {
+    background-color: #f9f9f9; 
+    border: 1px solid #ddd; 
+    padding: 16px; 
+    text-align: center; 
+}
+
+h2 {
+    text-align: center;
+    width: 100%;
+}
+
+
+@media (max-width: 1200px) {
+    .article-item {
+        flex: 0 1 calc(50% - 16px); 
+    }
+}
+
+@media (max-width: 768px) {
+    .article-item {
+        flex: 0 1 calc(100% - 16px); 
+    }
+}
+
+@media (max-width: 576px) {
+    .nav1 {
+        flex-direction: column; 
+    }
+}
